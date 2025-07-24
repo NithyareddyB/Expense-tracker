@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.express as px
 import os
 
-# Load data
 @st.cache_data
 def load_data():
     if os.path.exists('expenses.csv'):
@@ -12,7 +11,6 @@ def load_data():
         return df
     return pd.DataFrame()
 
-# Main app
 st.title("💰 Expense Dashboard")
 
 df = load_data()
@@ -21,7 +19,7 @@ if df.empty:
     st.warning("No data found. Run the CLI first to add expenses!")
     st.stop()
 
-# Basic stats
+
 col1, col2, col3 = st.columns(3)
 with col1:
     st.metric("Total Spent", f"${df['amount'].sum():.2f}")
