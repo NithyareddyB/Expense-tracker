@@ -17,6 +17,11 @@ This GitHub repository contains a personal expense tracker application with both
 * `dashboard.py`: This Python script powers the interactive web-based expense dashboard using Streamlit.
 * `expenses.csv`: (Generated after first use) This CSV file stores all your expense data.
 
+## 🔗 Live Demo
+
+Check out the live deployed dashboard on Streamlit:  
+👉 [Expense Tracker Dashboard](https://expense-tracker-mclbxi2s3ijsi7ecgmkf5a.streamlit.app/)
+
 ### How to Use
 
 **1. Clone the Repository**
@@ -50,3 +55,9 @@ To visualize the expenses, run the dashboard.py script using Streamlit:
 streamlit run dashboard.py
 ```
 This will open the expense dashboard in your web browser. If no expenses are added using the CLI, the dashboard will show a warning because there is nothing to display.
+
+### 📝Note on Data
+* This repository includes a sample expenses.csv file with dummy data.
+* When you run the CLI (expense_tracker.py), it will append your own data to this file.
+* You can edit or delete the file to start fresh.
+* All your changes are local
