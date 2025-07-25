@@ -24,24 +24,29 @@ This GitHub repository contains a personal expense tracker application with both
 ```bash
 git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
 cd YOUR_REPOSITORY_NAME
+```
 2. Install Dependencies
 You'll need Python installed on your system. Then, install the required libraries:
 
-Bash
+```bash
 
 pip install pandas streamlit plotly
+```
 3. Using the Command-Line Interface (CLI)
 To add and view expenses, run the expense_tracker.py script:
 
-Bash
+```bash
 
 python expense_tracker.py
+```
 Follow the on-screen prompts to choose options like adding a new expense or viewing existing ones.
 
 4. Using the Web Dashboard
+
 To visualize your expenses, run the dashboard.py script using Streamlit:
 
-Bash
+```bash
 
 streamlit run dashboard.py
+```
 This will open the expense dashboard in your web browser. Ensure you have added some expenses using the CLI first for the dashboard to display data. If no expenses are found, the dashboard will show a warning.
