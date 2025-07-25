@@ -6,8 +6,8 @@ import os
 @st.cache_data
 def load_data():
     csv_path = os.path.join(os.path.dirname(__file__), 'expenses.csv')
-    if os.path.exists('csv_path'):
-        df = pd.read_csv('csv_path')
+    if os.path.exists(csv_path):
+        df = pd.read_csv(csv_path)
         df['date'] = pd.to_datetime(df['date'])
         return df
     return pd.DataFrame()
